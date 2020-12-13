@@ -205,7 +205,7 @@ public class Module2_Tests {
         try {
             final String output = "";
             List<String> allLines = Files.readAllLines(path);
-            result = String.join("\n", allLines);
+            result = String.join(System.lineSeparator(), allLines);
         } catch (IOException e) {
             //e.printStackTrace();
         }
